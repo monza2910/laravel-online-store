@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Dashboard | Hyper - Responsive Bootstrap 5 Admin Dashboard</title>
+        <title>@yield('title')</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
         <meta content="Coderthemes" name="author">
@@ -27,16 +27,16 @@
             <!-- ========== Left Sidebar Start ========== -->
             @include('layouts.admin.sidebar')
             <!-- ============== End Sidebar ============= -->
-            
+
             <!-- =========== Start Content ============= -->
             <div class="content-page">
-                
+
                 <!-- ================ Navbar ============== -->
                 @include('layouts.admin.navbar')
                 <!-- ================ End Navbar ============== -->
-                
+
                 <!-- ================ Main Content ============== -->
-                
+
 
                 <div class="container-fluid">
                     <!-- start page title -->
@@ -59,15 +59,15 @@
                                         </a>
                                     </form>
                                 </div>
-                                <h4 class="page-title">Dashboard</h4>
+                                <h4 class="page-title">@yield('titlePage')</h4>
                             </div>
                         </div>
                     </div>
                     <!-- end page title -->
                 </div>
                 <!-- ================ End Content ============== -->
-                
-                
+
+
                 <!-- ================ Footer ============== -->
                 @include('layouts.admin.footer')
                 <!-- ================ End Footer ============== -->
@@ -76,7 +76,7 @@
         </div>
 
 
-    
+
 
 
 
