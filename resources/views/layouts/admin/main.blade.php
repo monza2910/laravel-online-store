@@ -18,7 +18,8 @@
         <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css">
         <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="light-style">
         <link href="assets/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style">
-
+        <link href="assets/css/vendor/dataTables.bootstrap5.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/vendor/responsive.bootstrap5.css" rel="stylesheet" type="text/css" />
     </head>
 
     <body class="loading" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
@@ -63,6 +64,8 @@
                             </div>
                         </div>
                     </div>
+
+                    @yield('content')
                     <!-- end page title -->
                 </div>
                 <!-- ================ End Content ============== -->
@@ -94,5 +97,14 @@
         <!-- demo app -->
         <script src="assets/js/pages/demo.dashboard.js"></script>
         <!-- end demo js-->
+
+        <!-- Datatables js -->
+        <script src="assets/js/vendor/jquery.dataTables.min.js"></script>
+        <script src="assets/js/vendor/dataTables.bootstrap5.js"></script>
+        <script src="assets/js/vendor/dataTables.responsive.min.js"></script>
+        <script src="assets/js/vendor/responsive.bootstrap5.min.js"></script>
+
+        <!-- Datatable Init js -->
+        <script src="assets/js/pages/demo.datatable-init.js"></script>
     </body>
 </html>

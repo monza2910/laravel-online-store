@@ -22,4 +22,5 @@ Route::get('/user', function () {
     return view('layouts.admin.main');
 });
 
+
 Route::resource('product', ProductController::class);
