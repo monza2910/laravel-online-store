@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Web;
-use RealRashid\SweetAlert\Facades\Alert;
+namespace App\Http\Controllers\Web\Interface;
+
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class ProductController extends Controller
+class HomeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +14,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        Alert::alert('Title', 'Message', 'Type');
-        return view('admin.product.index');
-
+        //
     }
 
     /**

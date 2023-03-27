@@ -1,6 +1,7 @@
 <?php
 
-use App\Http\Controllers\Web\ProductController;
+use App\Http\Controllers\Web\Master\ProductController;
+use App\Http\Controllers\Web\Interface\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,3 +27,8 @@ route::prefix('admin')->group(function(){
     Route::resource('product', ProductController::class);
 
 });
+
+Route::get('/',function(){
+    return view('interface.home');
+});
+
