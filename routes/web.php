@@ -22,5 +22,7 @@ Route::get('/user', function () {
     return view('layouts.admin.main');
 });
 
+route::prefix('admin')->group(function(){
+    Route::resource('product', ProductController::class);
 
-Route::resource('product', ProductController::class);
+});

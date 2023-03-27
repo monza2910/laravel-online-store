@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>@yield('title')</title>
+        <title>Envoin | @yield('title')</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
         <meta content="Coderthemes" name="author">
@@ -15,11 +15,11 @@
         <!-- third party css end -->
 
         <!-- App css -->
-        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css">
-        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="light-style">
-        <link href="assets/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style">
-        <link href="assets/css/vendor/dataTables.bootstrap5.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/vendor/responsive.bootstrap5.css" rel="stylesheet" type="text/css" />
+        <link href="{{asset('assets/css/icons.min.css')}}" rel="stylesheet" type="text/css">
+        <link href="{{asset('assets/css/app.min.css')}}" rel="stylesheet" type="text/css" id="light-style">
+        <link href="{{asset('assets/css/app-dark.min.css')}}" rel="stylesheet" type="text/css" id="dark-style">
+        <link href="{{asset('assets/css/vendor/dataTables.bootstrap5.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset('assets/css/vendor/responsive.bootstrap5.css')}}" rel="stylesheet" type="text/css" />
     </head>
 
     <body class="loading" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
@@ -41,29 +41,7 @@
 
                 <div class="container-fluid">
                     <!-- start page title -->
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="page-title-box">
-                                <div class="page-title-right">
-                                    <form class="d-flex">
-                                        <div class="input-group">
-                                            <input type="text" class="form-control form-control-light" id="dash-daterange">
-                                            <span class="input-group-text bg-primary border-primary text-white">
-                                                <i class="mdi mdi-calendar-range font-13"></i>
-                                            </span>
-                                        </div>
-                                        <a href="javascript: void(0);" class="btn btn-primary ms-2">
-                                            <i class="mdi mdi-autorenew"></i>
-                                        </a>
-                                        <a href="javascript: void(0);" class="btn btn-primary ms-1">
-                                            <i class="mdi mdi-filter-variant"></i>
-                                        </a>
-                                    </form>
-                                </div>
-                                <h4 class="page-title">@yield('titlePage')</h4>
-                            </div>
-                        </div>
-                    </div>
+
 
                     @yield('content')
                     <!-- end page title -->
@@ -83,28 +61,28 @@
 
 
 
-
+        @include('sweetalert::alert')
         <!-- bundle -->
-        <script src="assets/js/vendor.min.js"></script>
-        <script src="assets/js/app.min.js"></script>
+        <script src="{{asset('assets/js/vendor.min.js')}}"></script>
+        <script src="{{asset('assets/js/app.min.js')}}"></script>
 
         <!-- third party js -->
-        <script src="assets/js/vendor/apexcharts.min.js"></script>
-        <script src="assets/js/vendor/jquery-jvectormap-1.2.2.min.js"></script>
-        <script src="assets/js/vendor/jquery-jvectormap-world-mill-en.js"></script>
+        <script src="{{asset('assets/js/vendor/apexcharts.min.js')}}"></script>
+        <script src="{{asset('assets/js/vendor/jquery-jvectormap-1.2.2.min.js')}}"></script>
+        <script src="{{asset('assets/js/vendor/jquery-jvectormap-world-mill-en.js')}}"></script>
         <!-- third party js ends -->
 
         <!-- demo app -->
-        <script src="assets/js/pages/demo.dashboard.js"></script>
+        <script src="{{asset('assets/js/pages/demo.dashboard.js')}}"></script>
         <!-- end demo js-->
 
         <!-- Datatables js -->
-        <script src="assets/js/vendor/jquery.dataTables.min.js"></script>
-        <script src="assets/js/vendor/dataTables.bootstrap5.js"></script>
-        <script src="assets/js/vendor/dataTables.responsive.min.js"></script>
-        <script src="assets/js/vendor/responsive.bootstrap5.min.js"></script>
+        <script src="{{asset('assets/js/vendor/jquery.dataTables.min.js')}}"></script>
+        <script src="{{asset('assets/js/vendor/dataTables.bootstrap5.js')}}"></script>
+        <script src="{{asset('assets/js/vendor/dataTables.responsive.min.js')}}"></script>
+        <script src="{{asset('assets/js/vendor/responsive.bootstrap5.min.js')}}"></script>
 
         <!-- Datatable Init js -->
-        <script src="assets/js/pages/demo.datatable-init.js"></script>
+        <script src="{{asset('assets/js/pages/demo.datatable-init.js')}}"></script>
     </body>
 </html>

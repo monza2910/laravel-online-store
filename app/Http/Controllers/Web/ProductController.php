@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Web;
-
+use RealRashid\SweetAlert\Facades\Alert;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
@@ -14,7 +14,9 @@ class ProductController extends Controller
      */
     public function index()
     {
+        Alert::alert('Title', 'Message', 'Type');
         return view('admin.product.index');
+
     }
 
     /**

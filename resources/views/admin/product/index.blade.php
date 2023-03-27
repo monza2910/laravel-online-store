@@ -1,7 +1,7 @@
 @extends('layouts.admin.main')
 
 @section('title')
-    Envoin | Product
+    Product
 @endsection
 
 @section('titlePage')

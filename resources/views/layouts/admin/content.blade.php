@@ -40,7 +40,7 @@
                             <h3 class="mt-3 mb-3">36,254</h3>
                             <p class="mb-0 text-muted">
                                 <span class="text-success me-2"><i class="mdi mdi-arrow-up-bold"></i> 5.27%</span>
-                                <span class="text-nowrap">Since last month</span>  
+                                <span class="text-nowrap">Since last month</span>
                             </p>
                         </div> <!-- end card-body-->
                     </div> <!-- end card-->
@@ -122,7 +122,7 @@
                     <div dir="ltr">
                         <div id="high-performing-product" class="apex-charts" data-colors="#727cf5,#e3eaef"></div>
                     </div>
-                        
+
                 </div> <!-- end card-body-->
             </div> <!-- end card-->
 
@@ -377,7 +377,7 @@
                     <h4 class="header-title">Total Sales</h4>
 
                     <div id="average-sales" class="apex-charts mb-4 mt-4" data-colors="#727cf5,#0acf97,#fa5c7c,#ffbc00"></div>
-                    
+
 
                     <div class="chart-widget-list">
                         <p>
@@ -421,7 +421,7 @@
                     </div>
                     <h4 class="header-title mb-2">Recent Activity</h4>
 
-                    <div data-simplebar="" style="max-height: 419px;"> 
+                    <div data-simplebar="" style="max-height: 419px;">
                         <div class="timeline-alt pb-0">
                             <div class="timeline-item">
                                 <i class="mdi mdi-upload bg-info-lighten text-info timeline-icon"></i>
